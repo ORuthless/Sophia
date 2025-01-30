@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Agent</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .iframe-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 110vh; /* Make it taller to push unwanted content off-screen */
+            border: none;
+            position: absolute;
+            top: -50px; /* Adjust to hide the Home button */
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe 
+            src="https://agentivehub.com/chat/12ad0a5c-9e32-484b-86fc-cc0e31c34963"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+            loading="lazy">
+        </iframe>
+    </div>
+</body>
+</html>
